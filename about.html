@@ -5,25 +5,128 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
+
   <link rel="stylesheet" href="style.css">
+  <!-- COCOGOOSE & LATO FONT -->
+  <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/lato" rel="stylesheet">
+  <!-- Link to FontAwesome page -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"/>
+
 </head>
 <body>
   <header>
+    <nav class="nav-bar">
+      <section class="nav-bar-section1">
+        <div>Facebook</div>
+        <div>twitter</div>
+        <div>English</div>
+        <div>My Page</div>
+        <div>Logout</div>
+      </section>
+      
+      <section class="nav-bar-section2">
+        <div class="nav-bar-logo">
+          <img src="assets/Logo1.png" alt="">
+        </div>
+        <ul class="nav-bar-options">
+          <li>About</li>
+          <li>Program</li>
+          <li>Join</li>
+          <li>Sponsor</li>
+          <li>News</li>
+        </ul>
+        <div class="nav-bar-button">CC Campaign</div>
+      </section>
 
+      <!-- Hamburguer icon -->
+      <section class="hamburguer-button">
+          <i id="burguer-icon" class="fas fa-bars"></i>
+      </section>
+
+    </nav>
   </header>
 
 
 
   <main>
+    <section class="intro-containerAbout">
+      <div class="intro-part1">
+        <h2>"¡Hola! Digital Universe"</h2>
+        <h1>CREATIVE COMMONS GLOBAL SUMMIT 2015</h1>
+        <p class="intro-paragraph1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam ex quod praesentium ut sint!</p>
+        <p class="intro-paragraph2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea optio laboriosam molestias ab, reiciendis similique!</p>
+        <p class="intro-paragraph3">eriksanchezbeltran@outlook.com</p>
+        <div class="background">
+          <div class="hitmark-1"></div>
+          <div class="hitmark-2"></div>
+          <div class="hitmark-3"></div>
+          <div class="hitmark-4"></div>
+          <div class="hitmark-5"></div>
+        </div>
+      </div>
+
+      <div class="intro-part2">
+        <h3>Creative Commons Global Summit 2015 Logo</h3>
+        <hr>
+        <p class="intro-paragraph4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, vero.</p>
+        <div class="intro-imgp2">
+          <img src="assets/Logo1.png" alt="">
+        </div>
+      </div>
+
+      <div class="intro-part3">
+        <h3>See the past CC Global Summits</h3>
+        <hr>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt aut nam consequatur.</p>
+        
+        <div class="event1">
+          <img src="assets/Erik Capstone.jpg" alt="">
+        </div>
+
+        <div class="event2">
+          <img src="assets/Erik Capstone.jpg" alt="">
+        </div>
+      </div>
+    </section>
 
   </main>
 
+  <footer >
+    <section class="about-footer">
+      <h3>Partner</h3>
+      <hr>
+      <div class="partner-section">
+        <div class="partner1"><img src="assets/guilulogo_1.png" alt=""></div>
+        <div class="partner2"><img src="assets/rocaAmatista_logo.jpeg" alt=""></div>
+        <div class="partner3">NAVER</div>
+        <div class="partner4">daumkakao</div>
+        <div class="partner5">airbnb</div>
+      </div>
+    </section>
 
-
-  <footer>
-    
+    <section class="bottom-partner">
+      <span class="bottom-logo"><img src="assets/Logo1.png" alt=""></span>
+      <span class="rights-reserved">2022 Teacher Lore Some Rights Reserved</span>
+    </section>
   </footer>
 
+  <!-- Modal for hambuguer menu // Modal zone --------------------------------------------------------------------------------------------------------->
+  <div id="modal-menu" class="modal-menu">
+    <i id="x-icon" class="fas fa-times dont-show"></i>
+    <!-- Options menu -->
+    <ul id="list-menu" class="modal-hamburguer">
+        <li><a href="#">About</a></li>
+        <li><a href="/index.html">Program</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Sponsor</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">CC Campaign</a></li>
+    </ul>
+  </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
