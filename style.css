@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #272a31;
+  --color-secundary: #ec5242;
+  --background-primary: #d3d3d3;
+  --font-family--primary: "COCOGOOSE", sans-serif;
+  --font-family-secundary: "Lato", sans-serif;
+}
+
+body {
+  font-family: var(--font-family-secundary);
+  font-size: 12px;
+  background-color: #fffbfb;
+  font-weight: bold;
+  color: #3b3c3e;
+}
+
+@media screen and (max-width: 768px) {
+  header .nav-bar-section1 {
+    display: none;
+  }
+  header .nav-bar-section2 {
+    display: none;
+  }
+  main .intro-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding: 5%;
+  }
+  main .intro-container h2 {
+    color: var(--color-secundary);
+    font-weight: lighter;
+    font-size: 20px;
+  }
+  main .intro-container h1 {
+    color: rgba(255, 0, 0, 0);
+    font-family: var(--font-family--primary);
+    font-weight: bold;
+    font-size: 29px;
+    width: 100%;
+    line-height: 29px;
+    margin: 1% 0 1% 0;
+    background-image: url(assets/Erik\ Capstone.jpg);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    -webkit-background-clip: text;
+            background-clip: text;
+    background-position: 50% 55%;
+  }
+  main .intro-container .intro-paragraph1 {
+    width: 100%;
+    background-color: rgba(189, 189, 189, 0.148);
+    border: 2px solid white;
+    padding: 15px;
+    margin: 15px 0 15px 0;
+    font-size: 12px;
+  }
+  main .intro-container .intro-paragraph2 {
+    display: flex;
+    font-weight: 800;
+    font-size: 20px;
+  }
+  main .intro-container .intro-paragraph3 {
+    font-size: 19px;
+    font-weight: lighter;
+    color: var --color-primary;
+    font-size: 12px;
+  }
+  main .main-program-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-primary);
+    color: var(--background-primary);
+    padding: 15px 0 20px 0;
+  }
+  main .main-program-section .container-main-program {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 95%;
+    margin-bottom: 10px;
+  }
+  main .main-program-section .container-main-program h3 {
+    text-align: center;
+  }
+  main .main-program-section .container-main-program hr {
+    border: 1px solid var(--color-secundary);
+    width: 15%;
+    margin: 0 auto;
+    margin: 10px auto 10px auto;
+  }
+  main .main-program-section .container-main-program .card-main-program {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(231, 218, 218, 0.181);
+    margin: 5px 0 5px 0;
+  }
+  main .main-program-section .container-main-program .card-main-program .card-logo {
+    width: 20%;
+    padding: 2%;
+  }
+  main .main-program-section .container-main-program .card-main-program .card-title {
+    width: 30%;
+    padding: 2%;
+    color: var(--color-secundary);
+  }
+  main .main-program-section .container-main-program .card-main-program .card-text {
+    width: auto;
+    padding: 2%;
+  }
+  main .main-program-section .card-button {
+    background-color: var(--color-secundary);
+    width: 80%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .features-speakers-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .features-speakers-section h3 {
+    margin: 10px 0 10px 0;
+  }
+  main .features-speakers-section hr {
+    border: 1px solid var(--color-secundary);
+    width: 9%;
+  }
+  main .features-speakers-section .container-info-fs {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  main .features-speakers-section .container-info-fs .container-img-fs {
+    width: 30%;
+    height: 30%;
+  }
+  main .features-speakers-section .container-info-fs .container-img-fs img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  main .features-speakers-section .container-info-fs .container-text-fs {
+    width: 60%;
+    margin-left: 10px;
+  }
+  main .features-speakers-section .container-info-fs .container-text-fs .fscard-name {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  main .features-speakers-section .container-info-fs .container-text-fs .fscard-degree {
+    color: var(--color-secundary);
+    font-size: 11px;
+  }
+  main .features-speakers-section .container-info-fs .container-text-fs hr {
+    margin: 5px 0px 5px 0;
+  }
+  main .features-speakers-section .container-info-fs .container-text-fs .fscard-text {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 769px) {
+  header .nav-bar .nav-bar-section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    height: 35px;
+    background-color: var(--color-primary);
+    color: var(--background-primary);
+    text-align: center;
+    align-items: center;
+    padding-right: 10%;
+  }
+  header .nav-bar .nav-bar-section1 div {
+    padding-left: 2%;
+  }
+  header .nav-bar .nav-bar-section2 {
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    background-color: var(--background-primary);
+    align-items: center;
+  }
+  header .nav-bar .nav-bar-section2 .nav-bar-logo img {
+    width: 200px;
+  }
+  header .nav-bar .nav-bar-section2 .nav-bar-logo img:hover {
+    background-color: red;
+  }
+  header .nav-bar .nav-bar-section2 .nav-bar-options {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+  }
+  header .nav-bar .nav-bar-section2 .nav-bar-button {
+    display: flex;
+    align-content: flex-start;
+  }
+  main .intro-container {
+    height: 100vh;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .intro-container h2 {
+    color: var(--color-secundary);
+    font-weight: 500;
+  }
+  main .intro-container h1 {
+    color: rgba(255, 0, 0, 0);
+    font-family: var(--font-family--primary);
+    font-weight: bold;
+    font-size: 60px;
+    width: 50vw;
+    line-height: 55px;
+    margin: 1% 0 1% 0;
+    background-image: url(assets/Erik\ Capstone.jpg);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    -webkit-background-clip: text;
+            background-clip: text;
+    background-position: 50% 55%;
+  }
+  main .intro-container .intro-paragraph1 {
+    width: 60%;
+    background-color: rgba(189, 189, 189, 0.148);
+    border: 2px solid white;
+    padding: 15px;
+    margin: 15px 0 15px 0;
+  }
+  main .intro-container .intro-paragraph2 {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  main .intro-container .intro-paragraph3 {
+    font-size: 19px;
+    font-weight: lighter;
+    color: var --color-primary;
+  }
+  main .main-program-section {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+    background-color: var(--color-primary);
+    color: var(--background-primary);
+  }
+  main .main-program-section .card-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+  main .main-program-section .card-container h2 {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0 1% 0;
+  }
+  main .main-program-section .card-container .container-main-program {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
