@@ -4,13 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Main page</title>
 
   <!-- Style.css  -->
   <link rel="stylesheet" href="./style.css">
   <!-- COCOGOOSE & LATO FONT -->
   <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
   <link href="http://fonts.cdnfonts.com/css/lato" rel="stylesheet">
+  <!-- Link to FontAwesome page -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"/>
 
                 
 </head>
@@ -39,6 +43,11 @@
           <li>News</li>
         </ul>
         <div class="nav-bar-button">CC Campaign</div>
+      </section>
+
+      <!-- Hamburguer icon -->
+      <section class="hamburguer-button">
+          <i id="burguer-icon" class="fas fa-bars"></i>
       </section>
 
     </nav>
@@ -99,24 +108,59 @@
     <section class="features-speakers-section">
       <h3 class="fs-title">Featured Speakers</h3>
       <hr>
-      <!-- Speaker 1 -->
-      <div class="container-info-fs">
-        <div class="container-img-fs">
-          <img src="assets/speaker-Lorena.jpg" alt="">
-        </div>
 
-        <div class="container-text-fs">
-          <h4 class="fscard-name">Lorena Hermosa</h4>
-          <div class="fscard-degree"><i>Ingeniero en Sistemas computaciones de la NASA </i></div>
-          <hr>
-          <div class="fscard-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nam cum omnis in? Ad, quibusdam.</div>
+      <div class="contaier-speakers"></div>
+        <!-- Speaker 1 -->
+        <div class="container-info-fs">
+          <div class="container-img-fs">
+            <img src="assets/speaker-Lorena.jpg" alt="">
+          </div>
+
+          <div class="container-text-fs">
+            <h4 class="fscard-name">Lorena Hermosa</h4>
+            <div class="fscard-degree"><i>Ingeniero en Sistemas computaciones de la NASA </i></div>
+            <hr>
+            <div class="fscard-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nam cum omnis in? Ad, quibusdam.</div>
+          </div>
+        </div>
+        
+        <!-- Speaker 2 -->
+        <div class="container-info-fs">
+          <div class="container-img-fs">
+            <img src="assets/speaker-Lorena.jpg" alt="">
+          </div>
+
+          <div class="container-text-fs">
+            <h4 class="fscard-name">Lorena Hermosa</h4>
+            <div class="fscard-degree"><i>Ingeniero en Sistemas computaciones de la NASA </i></div>
+            <hr>
+            <div class="fscard-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nam cum omnis in? Ad, quibusdam.</div>
+          </div>
         </div>
       </div>
-
-
+            
+      <div class="fs-buttonMore"> <span>MORE</span><i class="fas fa-angle-down"></i> </div>
     </section>
 
   </main>
+
+
+
+
+  <!-- Modal for hambuguer menu // Modal zone --------------------------------------------------------------------------------------------------------->
+  <div id="modal-menu" class="modal-menu">
+    <i id="x-icon" class="fas fa-times dont-show"></i>
+    <!-- Options menu -->
+    <ul id="list-menu" class="modal-hamburguer">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Program</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Sponsor</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">CC Campaign</a></li>
+    </ul>
+  </div>
+        
 
 
   <script src="./script.js"></script>
