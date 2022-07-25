@@ -51,11 +51,11 @@ body {
     z-index: 100;
   }
   main .intro-container {
-    border: 1px solid #000;
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 60px 5% 5% 5%;
+    position: relative;
   }
   main .intro-container h2 {
     color: var(--color-secundary);
@@ -95,6 +95,30 @@ body {
     font-weight: lighter;
     color: var --color-primary;
     font-size: 12px;
+  }
+  main .intro-container .main-background {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    left: 0;
+    top: 0;
+    z-index: -2;
+  }
+  main .intro-container .main-background .mainbg-1 {
+    width: 100%;
+    height: 100px;
+    background-image: url(assets/main-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+  main .intro-container .main-background .mainbg-2 {
+    width: 100%;
+    height: 100px;
+    background-image: url(assets/);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
   }
   main .main-program-section {
     display: flex;
@@ -409,8 +433,8 @@ body {
     background-position: 50% 55%;
   }
   .intro-containerAbout .intro-part1 .background .hitmark-1 {
-    background-image: url(assets/bgi/hitmark-colorful.png);
-    background-size: 25%;
+    background-image: url(assets/bgi/hitmark_colorful.png);
+    background-size: 23%;
     border-radius: 50%;
     position: absolute;
     width: 60px;
@@ -584,7 +608,8 @@ body {
     grid: 3fr;
   }
   .about-footer .partner-section .partner3 img {
-    width: 20%;
+    width: 60%;
+    border-radius: 50%;
   }
   .about-footer .partner-section .partner4 {
     grid-area: p4;
