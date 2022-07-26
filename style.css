@@ -26,8 +26,11 @@ body {
   color: var(--color-primary);
 }
 
+* img {
+  width: 10%;
+}
+
 * hr {
-  border: 1px solid var(--color-secundary);
   width: 15%;
   margin: 0 auto;
   margin: 10px auto 10px auto;
@@ -52,9 +55,10 @@ body {
   }
   main .intro-container {
     width: 100%;
+    height: 60%;
     display: flex;
     flex-direction: column;
-    padding: 60px 5% 5% 5%;
+    padding: 60px 5% 60px 5%;
     position: relative;
   }
   main .intro-container h2 {
@@ -79,7 +83,7 @@ body {
   }
   main .intro-container .intro-paragraph1 {
     width: 100%;
-    background-color: rgba(189, 189, 189, 0.148);
+    background-color: rgb(247, 247, 247);
     border: 2px solid white;
     padding: 15px;
     margin: 15px 0 15px 0;
@@ -99,7 +103,7 @@ body {
   main .intro-container .main-background {
     position: absolute;
     width: 100%;
-    height: 200px;
+    height: 100%;
     left: 0;
     top: 0;
     z-index: -2;
@@ -113,12 +117,50 @@ body {
     opacity: 0.2;
   }
   main .intro-container .main-background .mainbg-2 {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    bottom: 10%;
+    right: 14%;
+  }
+  main .intro-container .main-background .mainbg-2 img {
     width: 100%;
-    height: 100px;
-    background-image: url(assets/);
-    background-size: cover;
-    background-repeat: no-repeat;
+    opacity: 0.1;
+  }
+  main .intro-container .main-background .mainbg-3 {
+    position: absolute;
+    width: 20vw;
+    max-width: 100px;
+    height: 20vw;
+    max-height: 100px;
+    top: 38%;
+    right: 12%;
+    background-image: url(assets/Icons/hitmark_onb.png);
+    background-size: 18px;
+    border-radius: 50%;
+  }
+  main .intro-container .main-background .mainbg-4 {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    bottom: 5%;
+    left: 19%;
+  }
+  main .intro-container .main-background .mainbg-4 img {
+    width: 100%;
     opacity: 0.2;
+  }
+  main .intro-container .main-background .mainbg-5 {
+    position: absolute;
+    width: 9vw;
+    height: 9vw;
+    top: 5%;
+    right: 29%;
+    transform: rotate(45deg);
+  }
+  main .intro-container .main-background .mainbg-5 img {
+    width: 100%;
+    opacity: 0.1;
   }
   main .main-program-section {
     display: flex;
@@ -126,16 +168,20 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    background-image: url(assets/Icons/hitmark_gray.png);
+    background-size: 20px;
     background-color: var(--color-primary);
     color: var(--background-primary);
-    padding: 15px 0 20px 0;
+    padding: 0 0 0 0;
   }
   main .main-program-section .container-main-program {
     display: flex;
     flex-direction: column;
     justify-self: center;
-    width: 95%;
-    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(85, 80, 80, 0.466);
+    padding: 5% 5% 0 5%;
   }
   main .main-program-section .container-main-program h3 {
     text-align: center;
@@ -150,73 +196,104 @@ body {
   }
   main .main-program-section .container-main-program .card-main-program .card-logo {
     width: 20%;
-    padding: 2%;
+    min-width: 50px;
+    margin: 1px 2% 1px 2%;
+    display: flex;
+    justify-content: center;
+    padding: 0 5px 0 5px;
+  }
+  main .main-program-section .container-main-program .card-main-program .card-logo img {
+    width: 70%;
   }
   main .main-program-section .container-main-program .card-main-program .card-title {
-    width: 30%;
-    padding: 2%;
+    width: 20%;
+    padding: 0;
+    font-size: 0.8rem;
     color: var(--color-secundary);
+    text-align: left;
   }
   main .main-program-section .container-main-program .card-main-program .card-text {
-    width: auto;
+    width: 60%;
     padding: 2%;
+    font-size: 0.6rem;
   }
-  main .main-program-section .card-button {
+  main .main-program-section .container-main-program .card-button {
     background-color: var(--color-secundary);
     width: 80%;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 40px auto;
+    font-size: 0.8rem;
   }
-  main .features-speakers-section {
+  main .features-speakerSection {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    width: 100%;
   }
-  main .features-speakers-section .fs-title {
-    margin: 20px 0 10px 0;
+  main .features-speakerSection .fs-title {
+    margin: 20px 0 0 0;
   }
-  main .features-speakers-section hr {
+  main .features-speakerSection hr {
     border: 1px solid var(--color-secundary);
     width: 9%;
     margin-bottom: 20px;
   }
-  main .features-speakers-section .container-info-fs {
-    width: 95%;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  main .features-speakers-section .container-info-fs .container-img-fs {
-    width: 30%;
-    height: 30%;
-  }
-  main .features-speakers-section .container-info-fs .container-img-fs img {
-    display: block;
+  main .features-speakerSection .contaier-speakers {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  main .features-speakers-section .container-info-fs .container-text-fs {
+  main .features-speakerSection .contaier-speakers .container-info-fs {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 15px 30px 15px;
+  }
+  main .features-speakerSection .contaier-speakers .container-info-fs .container-img-fs {
+    width: 43vw;
+    height: 39vw;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    background-image: url(assets/bgi/chess_black5.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+  }
+  main .features-speakerSection .contaier-speakers .container-info-fs .container-img-fs img {
+    width: 37vw;
+    width: 33vw;
+  }
+  main .features-speakerSection .contaier-speakers .container-info-fs .container-text-fs {
     width: 60%;
+    height: 100%;
     margin-left: 10px;
   }
-  main .features-speakers-section .container-info-fs .container-text-fs .fscard-name {
+  main .features-speakerSection .contaier-speakers .container-info-fs .container-text-fs .fscard-name {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 1rem;
   }
-  main .features-speakers-section .container-info-fs .container-text-fs .fscard-degree {
+  main .features-speakerSection .contaier-speakers .container-info-fs .container-text-fs .fscard-degree {
     color: var(--color-secundary);
     font-size: 11px;
   }
-  main .features-speakers-section .container-info-fs .container-text-fs hr {
-    margin: 5px 0 5px 0;
+  main .features-speakerSection .contaier-speakers .container-info-fs .container-text-fs .hr-speaker {
+    margin: 10px 0 10px 0;
+    padding: 0;
+    height: 0;
+    border: 1px solid #272a31;
   }
-  main .features-speakers-section .container-info-fs .container-text-fs .fscard-text {
-    font-size: 11px;
+  main .features-speakerSection .contaier-speakers .container-info-fs .container-text-fs .fscard-text {
+    font-size: 100%;
   }
-  main .features-speakers-section .fs-buttonMore {
+  main .features-speakerSection .fs-buttonMore {
     border: 1px solid rgba(0, 0, 0, 0.307);
     width: 90%;
     height: 30px;
@@ -225,10 +302,10 @@ body {
     justify-content: center;
     align-items: center;
   }
-  main .features-speakers-section .fs-buttonMore span {
+  main .features-speakerSection .fs-buttonMore span {
     margin-right: 10px;
   }
-  main .features-speakers-section .fs-buttonMore i {
+  main .features-speakerSection .fs-buttonMore i {
     color: var(--color-secundary);
   }
   /* Modal Menu */
@@ -308,6 +385,10 @@ body {
   }
   header .nav-bar .nav-bar-section1 div {
     padding-left: 2%;
+    cursor: pointer;
+  }
+  header .nav-bar .nav-bar-section1 div:hover {
+    color: #ee7366;
   }
   header .nav-bar .nav-bar-section2 {
     display: flex;
@@ -318,27 +399,47 @@ body {
   }
   header .nav-bar .nav-bar-section2 .nav-bar-logo img {
     width: 200px;
-  }
-  header .nav-bar .nav-bar-section2 .nav-bar-logo img:hover {
-    background-color: red;
+    cursor: pointer;
   }
   header .nav-bar .nav-bar-section2 .nav-bar-options {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     list-style: none;
     width: 40%;
     justify-content: space-between;
   }
+  header .nav-bar .nav-bar-section2 .nav-bar-options li {
+    padding: 5%;
+  }
+  header .nav-bar .nav-bar-section2 .nav-bar-options li:hover {
+    transform: scale(1.5);
+    background-color: rgba(226, 110, 97, 0.5960784314);
+    -webkit-backdrop-filter: blur(100px);
+            backdrop-filter: blur(100px);
+    color: white;
+  }
   header .nav-bar .nav-bar-section2 .nav-bar-button {
     display: flex;
     align-content: flex-start;
+    border: 3px solid #ec5242;
+    padding: 5px;
+    color: var(--color-secundary);
+    cursor: pointer;
+  }
+  header .nav-bar .hamburguer-button {
+    display: none;
+  }
+  main {
+    padding-bottom: 50px;
   }
   main .intro-container {
-    height: 100vh;
+    height: 89vh;
     padding-left: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
   }
   main .intro-container h2 {
     color: var(--color-secundary);
@@ -349,9 +450,9 @@ body {
     font-family: var(--font-family--primary);
     font-weight: bold;
     font-size: 60px;
-    width: 50vw;
+    width: 70%;
     line-height: 55px;
-    margin: 1% 0 1% 0;
+    margin: 1% 30% 1% 0;
     background-image: url(assets/Erik\ Capstone.jpg);
     background-repeat: no-repeat;
     background-size: 150%;
@@ -362,42 +463,274 @@ body {
   main .intro-container .intro-paragraph1 {
     width: 60%;
     background-color: rgba(189, 189, 189, 0.148);
-    border: 2px solid white;
+    border: 4px solid white;
     padding: 15px;
     margin: 15px 0 15px 0;
+    font-size: 0.9rem;
   }
   main .intro-container .intro-paragraph2 {
-    font-weight: bold;
-    font-size: 30px;
+    font-family: var(--font-family--primary);
+    font-size: 1.5rem;
+    color: var(--color-primary);
   }
   main .intro-container .intro-paragraph3 {
     font-size: 19px;
     font-weight: lighter;
     color: var --color-primary;
   }
-  main .main-program-section {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    height: 50vh;
-    background-color: var(--color-primary);
-    color: var(--background-primary);
+  main .intro-container .main-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    display: block;
   }
-  main .main-program-section .card-container {
-    width: 80%;
+  main .intro-container .main-background .mainbg-1 {
+    background-image: url(assets/main-background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    opacity: 0.2;
+  }
+  main .intro-container .main-background .mainbg-2 {
+    position: absolute;
+    right: 25%;
+    top: 10%;
+    width: 50px;
+  }
+  main .intro-container .main-background .mainbg-2 img {
+    width: 100%;
+    opacity: 0.2;
+  }
+  main .intro-container .main-background .mainbg-4 {
+    display: none;
+  }
+  main .intro-container .main-background .mainbg-5 {
+    display: none;
+  }
+  main .main-program-section {
+    border: 1px solid white;
     display: flex;
     flex-direction: column;
-    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    background-image: url(assets/Icons/hitmark_gray.png);
+    background-size: 25px;
+    background-color: rgba(59, 60, 62, 0.8745098039);
+    color: var(--background-primary);
   }
-  main .main-program-section .card-container h2 {
+  main .main-program-section .container-main-program {
+    width: 100%;
+    height: 50%;
+    background-color: rgba(59, 60, 62, 0.8862745098);
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    align-items: center;
+    padding: auto auto;
+    padding: 0 5% 0 5%;
+  }
+  main .main-program-section .container-main-program h3 {
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: center;
+    margin: 5% 0 0.5% 0;
+  }
+  main .main-program-section .container-main-program hr {
+    width: 3%;
+    margin-bottom: 50px;
+  }
+  main .main-program-section .container-main-program .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  main .main-program-section .container-main-program .cards .card-main-program {
+    background-color: rgba(172, 169, 169, 0.199);
+    display: flex;
+    width: 20%;
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    padding: 2%;
+  }
+  main .main-program-section .container-main-program .cards .card-main-program .card-logo {
+    width: 30%;
+    min-width: 100px;
+    max-height: 10vh;
+    min-height: 33%;
+    height: 50vw;
+    display: flex;
+    align-items: center;
+    margin: 2% 0 10% 0;
+  }
+  main .main-program-section .container-main-program .cards .card-main-program .card-logo img {
+    width: 100%;
+  }
+  main .main-program-section .container-main-program .cards .card-main-program .card-title {
+    text-align: center;
+    height: 10%;
+    color: var(--color-secundary);
+    font-size: 1.2rem;
+    margin: 0 0 0 0;
+  }
+  main .main-program-section .container-main-program .cards .card-main-program .card-text {
+    height: 100px;
+    text-align: center;
+    padding: 3%;
+    font-size: 1em;
+    margin-top: 5%;
+  }
+  main .main-program-section .container-main-program .card-button {
+    font-size: 1.3rem;
+    margin: 2% 0 4% 0;
+    border-bottom: 1px solid white;
+  }
+  main .features-speakerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  main .features-speakerSection .fs-title {
+    margin: 20px 0 0 0;
+    font-size: 18px;
+  }
+  main .features-speakerSection hr {
+    display: none;
+  }
+  main .features-speakerSection .speakerfeatures-hr {
+    display: block;
+    border: 1px solid #ec5242;
+    background-color: #ec5242;
+    width: 5%;
+  }
+  main .features-speakerSection .contaier-speakers {
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  main .features-speakerSection .contaier-speakers .container-info-fs {
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: center;
-    margin: 2% 0 1% 0;
+    align-items: center;
+    padding: 0;
+    margin: 0;
   }
-  main .main-program-section .card-container .container-main-program {
+  main .features-speakerSection .contaier-speakers .container-info-fs .container-img-fs {
+    width: 8vw;
+    height: 8vw;
     display: flex;
-    flex-direction: row;
+    justify-content: right;
+    align-items: flex-end;
+    background-image: url(assets/bgi/chess-gray.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-color: rgba(245, 234, 234, 0.185);
+  }
+  main .features-speakerSection .contaier-speakers .container-info-fs .container-img-fs img {
+    width: 85%;
+    height: 85%;
+  }
+  main .features-speakerSection .contaier-speakers .container-info-fs .container-text-fs {
+    width: 60%;
+    height: 100%;
+    margin-left: 10px;
+  }
+  main .features-speakerSection .contaier-speakers .container-info-fs .container-text-fs .fscard-name {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    height: 30%;
+  }
+  main .features-speakerSection .contaier-speakers .container-info-fs .container-text-fs .fscard-degree {
+    color: var(--color-secundary);
+    font-size: 0.8rem;
+    height: 15%;
+  }
+  main .features-speakerSection .contaier-speakers .container-info-fs .container-text-fs .hr-speaker {
+    display: block;
+    margin: 5px 0 5px 0;
+    padding: 0;
+    height: 0;
+    border: 1px solid rgba(39, 42, 49, 0.2823529412);
+    background-color: rgba(47, 39, 49, 0.0196078431);
+  }
+  main .features-speakerSection .contaier-speakers .container-info-fs .container-text-fs .fscard-text {
+    font-size: 0.8rem;
+    height: 40%;
+    display: flex;
+    align-items: center;
+  }
+  main .features-speakerSection .fs-buttonMore {
+    display: none;
+  }
+  footer .about-footer {
+    background-color: rgba(39, 42, 49, 0.8431372549);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0 5% 0;
+  }
+  footer .about-footer h3 {
+    font-size: 1.2rem;
+    color: rgba(228, 232, 241, 0.5254901961);
+  }
+  footer .about-footer hr {
+    background-color: #fff;
+    border: 1px solid #ec5242;
+    display: block;
+    width: 5%;
+    background-color: rgb(250, 0, 0);
+    margin: 2%;
+  }
+  footer .about-footer .partner-section {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 70%;
+  }
+  footer .about-footer .partner-section img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+  }
+  footer .about-footer .partner-section img:hover {
+    transform: scale(1.2);
+  }
+  footer .bottom-partner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .bottom-partner .bottom-logo {
+    width: 30%;
+    display: flex;
+    justify-content: right;
+  }
+  footer .bottom-partner .bottom-logo img {
+    width: 80%;
+  }
+  footer .bottom-partner .rights-reserved {
+    width: 40%;
+    height: 50%;
+    text-align: left;
+  }
+  .modal-menuAbout {
+    display: none;
   }
 }
 /* Mobil version - About page ------------------------------------------------------ */
@@ -444,7 +777,7 @@ body {
     z-index: 1;
   }
   .intro-containerAbout .intro-part1 .background .hitmark-2 {
-    background-image: url(assets/bgi/chess-black.png);
+    background-image: url(assets/bgi/chess_black.png);
     background-size: 125%;
     border-radius: 50%;
     position: absolute;
@@ -468,7 +801,7 @@ body {
     opacity: 0.7;
   }
   .intro-containerAbout .intro-part1 .background .hitmark-4 {
-    background-image: url(assets/bgi/chess-black.png);
+    background-image: url(assets/bgi/chess_black.png);
     background-size: 125%;
     border-radius: 50%;
     position: absolute;

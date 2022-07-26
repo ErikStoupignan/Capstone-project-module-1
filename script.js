@@ -16,5 +16,6 @@ xIcon.addEventListener('click', () => {
 
 // If click in an option from de memu, close the menu
 list.addEventListener('click', () => {
+  modal.style.display = 'none';
   hambIcon.style.display = 'block';
 });

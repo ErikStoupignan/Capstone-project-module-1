@@ -26,8 +26,11 @@ body {
   color: var(--color-primary)
 }
 
+*img {
+  width: 10%;
+}
+
 *hr {
-  border: 1px solid var(--color-secundary);
   width: 15%;
   margin: 0 auto;
   margin: 10px auto 10px auto;
@@ -60,9 +63,10 @@ body {
   main {
     .intro-container {
       width: 100%;
+      height: 60%;
       display: flex;
       flex-direction: column;
-      padding: 60px 5% 5% 5%;
+      padding: 60px 5% 60px 5%;
       position: relative;
 
       h2 {
@@ -88,7 +92,7 @@ body {
 
       .intro-paragraph1 {
         width: 100%;
-        background-color: rgba(189, 189, 189, 0.148);
+        background-color: rgb(247, 247, 247);
         border: 2px solid white;
         padding: 15px;
         margin: 15px 0 15px 0;
@@ -111,7 +115,7 @@ body {
       .main-background {
         position: absolute;
         width: 100%;
-        height: 200px;
+        height: 100%;
         left: 0;
         top: 0;
         z-index: -2;
@@ -126,12 +130,57 @@ body {
         }
 
         .mainbg-2 {
-          width: 100%;
-          height: 100px;
-          background-image: url(assets/);
-          background-size:cover;
-          background-repeat: no-repeat;
-          opacity: 0.2;
+          position: absolute;
+          width: 10vw;
+          height: 10vw;
+          bottom: 10%;
+          right: 14%;
+          img {
+            width: 100%;
+            opacity: 0.1;
+          }
+        }
+
+        .mainbg-3 {
+          position: absolute;
+          width: 20vw;
+          max-width: 100px;
+          height: 20vw;
+          max-height: 100px;
+          top: 38%;
+          right: 12%;
+          background-image: url(assets/Icons/hitmark_onb.png);
+          background-size: 18px;
+          border-radius: 50%;          
+        }
+
+        .mainbg-4 {
+          position: absolute;
+          width: 6vw;
+          height: 6vw;
+          bottom: 5%;
+          left: 19%;
+          img {
+            width: 100%;
+            opacity: 0.2;
+          }
+        }
+
+        .mainbg-5 {
+          position: absolute;
+          width: 9vw;
+          height: 9vw;
+          top: 5%;
+          right: 29%;
+          -ms-transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+          img {
+            width: 100%;
+            opacity: 0.1;
+          }
         }
       }
     }
@@ -143,16 +192,20 @@ body {
       justify-content: center;
       align-items: center;
       width: 100%;
+      background-image: url(assets/Icons/hitmark_gray.png);
+      background-size: 20px;
       background-color: var(--color-primary);
       color: var(--background-primary);
-      padding: 15px 0 20px 0;
+      padding: 0 0 0 0;
 
       .container-main-program {
         display: flex;
         flex-direction: column;
         justify-self: center;
-        width: 95%;
-        margin-bottom: 10px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(85, 80, 80, 0.466);
+        padding: 5% 5% 0 5%;
 
         h3 {
           text-align: center;
@@ -168,41 +221,53 @@ body {
 
           .card-logo {
             width: 20%;
-            padding: 2%;
+            min-width: 50px;
+            margin: 1px 2% 1px 2% ;
+            display: flex;
+            justify-content: center;
+            padding: 0 5px 0 5px;
+            img {
+              width: 70%;
+            }
           }
 
           .card-title {
-            width: 30%;
-            padding: 2%;
+            width: 20%;
+            padding: 0;
+            font-size: .8rem;
             color: var(--color-secundary);
+            text-align: left;
           }
 
           .card-text {
-            width: auto;
+            width: 60%;
             padding: 2%;
+            font-size: 0.6rem;
           }
         }
-      }
 
-      .card-button {
-        background-color: var(--color-secundary);
-        width: 80%;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        .card-button {
+          background-color: var(--color-secundary);
+          width: 80%;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 40px auto;
+          font-size: .8rem;
+        }
       }
     }
 
     // Speakers ---------------------------------------------------------------
-    .features-speakers-section {
+    .features-speakerSection {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      width: 100%;
 
       .fs-title {
-        margin: 20px 0 10px 0;
+        margin: 20px 0 0 0;
       }
 
       hr {
@@ -211,45 +276,62 @@ body {
         margin-bottom: 20px;
       }
 
-      .container-info-fs {
-        width: 95%;
+      .contaier-speakers {
+        width: 100%;
+        height: 100%;
         display: flex;
-        justify-content: center;
-        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+        
+        .container-info-fs {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 10px;
+          padding: 0 15px 30px 15px;
+          
+          .container-img-fs {
+            width: 43vw; 
+            height: 39vw;
+            
+            display: flex;
+            justify-content: right;
+            align-items: flex-end;   
 
-        .container-img-fs {
-          width: 30%;
-          height: 30%;
+            background-image: url(assets/bgi/chess_black5.png);
+            background-repeat: no-repeat;
+            background-size: 50%;
 
-          img {
-            display: block;
-            width: 100%;
+            img {
+              width: 37vw;
+              width: 33vw;
+            }
+          } 
+          .container-text-fs {
+            width: 60%;
             height: 100%;
-          }
-        }
-
-        .container-text-fs {
-          width: 60%;
-          margin-left: 10px;
-
-          .fscard-name {
-            font-weight: bold;
-            font-size: 15px;
-          }
-
-          .fscard-degree {
-            color: var(--color-secundary);
-            font-size: 11px;
-          }
-
-          hr {
-            margin: 5px 0 5px 0;
-          }
-
-          .fscard-text {
-            font-size: 11px;
-          }
-        }
+            margin-left: 10px;
+            .fscard-name {
+              font-weight: bold;
+              font-size: 1rem;
+            }
+            .fscard-degree {
+              color: var(--color-secundary);
+              font-size: 11px;
+            }
+            .hr-speaker {
+              margin: 10px 0 10px 0;
+              padding: 0;
+              height: 0;
+              border: 1px solid #272a31;
+            }
+            .fscard-text {
+              font-size: 100%;
+            }
+          } 
+        }       
       }
 
       .fs-buttonMore {
@@ -356,6 +438,11 @@ body {
 
         div {
           padding-left: 2%;
+          cursor: pointer;
+        }
+
+        div:hover {
+          color: #ee7366;
         }
       }
 
@@ -369,36 +456,56 @@ body {
         .nav-bar-logo {
           img {
             width: 200px;
-          }
-
-          img:hover {
-            background-color: red;
+            cursor: pointer;
           }
         }
 
         .nav-bar-options {
+          cursor: pointer;
           display: flex;
           flex-direction: row;
           list-style: none;
           width: 40%;
           justify-content: space-between;
+          
+          li {
+            padding: 5%;
+          }
+
+          li:hover {
+            transform: scale(1.5);
+            background-color: #e26e6198;
+            backdrop-filter: blur(100px);
+            color: white;
+          }
         }
 
         .nav-bar-button {
           display: flex;
           align-content: flex-start;
+          border: 3px solid #ec5242;
+          padding: 5px;
+          color: var(--color-secundary);
+          cursor: pointer;
         }
+      }
+
+      .hamburguer-button {
+        display: none;
       }
     }
   }
 
   main {
+    padding-bottom: 50px;
+
     .intro-container {
-      height: 100vh;
+      height: 89vh;
       padding-left: 10%;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      position: relative;
 
       h2 {
         color: var(--color-secundary);
@@ -410,9 +517,9 @@ body {
         font-family: var(--font-family--primary);
         font-weight: bold;
         font-size: 60px;
-        width: 50vw;
+        width: 70%;
         line-height: 55px;
-        margin: 1% 0 1% 0;
+        margin: 1% 30% 1% 0;
         background-image: url(assets/Erik\ Capstone.jpg);
         background-repeat: no-repeat;
         background-size: 150%;
@@ -423,14 +530,16 @@ body {
       .intro-paragraph1 {
         width: 60%;
         background-color: rgba(189, 189, 189, 0.148);
-        border: 2px solid white;
+        border: 4px solid white;
         padding: 15px;
         margin: 15px 0 15px 0;
+        font-size: .9rem;
       }
 
       .intro-paragraph2 {
-        font-weight: bold;
-        font-size: 30px;
+        font-family: var(--font-family--primary);        
+        font-size: 1.5rem;
+        color: var(--color-primary);
       }
 
       .intro-paragraph3 {
@@ -438,35 +547,311 @@ body {
         font-weight: lighter;
         color: var (--color-primary);
       }
+
+        .main-background {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          border: 1px solid #000;
+          display: block;
+          
+
+          .mainbg-1 {
+            background-image: url(assets/main-background.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 50%;
+            opacity: 0.2;
+          } 
+          .mainbg-2 {
+            position: absolute;
+            right: 25%;
+            top: 10%;
+            width: 50px;
+            img {
+              width: 100%;
+              opacity: 0.2;
+            }
+          }
+          .mainbg-3 {
+            
+          }
+          .mainbg-4 {
+            display: none;
+          }
+          .mainbg-5 {
+            display: none;
+          }
+
+
+      }
     }
 
     .main-program-section {
+      border: 1px solid white;
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      width: 100vw;
-      height: 50vh;
-      background-color: var(--color-primary);
+      width: 100%;
+      height: 40%;
+      background-image: url(assets/Icons/hitmark_gray.png);
+      background-size: 25px;
+      background-color: #3b3c3edf;
       color: var(--background-primary);
 
-      .card-container {
-        width: 80%;
+      .container-main-program {
+        width: 100%;
+        height: 50%;
+        background-color: #3b3c3ee2;
         display: flex;
         flex-direction: column;
-        justify-self: center;
+        justify-self: start;
+        align-items: center;
+        padding: auto auto;
+        padding: 0 5% 0 5%;
 
-        h2 {
+        h3 {
           display: flex;
+          font-size: 1.3rem;
           justify-content: center;
-          margin: 2% 0 1% 0;
+          margin: 5% 0 0.5% 0;
         }
 
-        .container-main-program {
+        hr {
+          width: 3%;
+          margin-bottom: 50px;
+        }
+
+        .cards {
           display: flex;
-          flex-direction: row;
           justify-content: space-between;
+          align-items: flex-start;
+          
+          .card-main-program { 
+            background-color: rgba(172, 169, 169, 0.199);
+            display: flex;
+            width: 20%;
+            height: auto;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 5px;  
+            padding: 2%;  
+            
+            .card-logo {
+              width: 30%;
+              min-width: 100px;
+              max-height: 10vh;
+              min-height: 33%;
+              height: 50vw;
+              display: flex;
+              align-items: center;
+              margin: 2% 0 10% 0;  
+
+              img {
+                width: 100%; 
+              }
+            }
+
+            .card-title {
+              text-align: center;
+              height: 10%;
+              color: var(--color-secundary);
+              font-size: 1.2rem;
+              margin: 0 0 0 0 ;            
+            }
+
+            .card-text {
+              height: 100px;
+              text-align: center;              
+              padding: 3%;  
+              font-size: 1em;     
+              margin-top: 5%;       
+            }
+          }
+
+        }
+
+        .card-button {
+          font-size: 1.3rem;
+          margin: 2% 0 4% 0;
+          border-bottom: 1px solid white;
         }
       }
     }
+
+    .features-speakerSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      .fs-title {
+        margin: 20px 0 0 0;
+        font-size: 18px;
+      }
+
+      hr {
+        display: none;
+      }
+
+      .speakerfeatures-hr {
+        display: block;
+        border: 1px solid #ec5242;
+        background-color: #ec5242;
+        width: 5%;
+      }
+
+      .contaier-speakers {
+        width: 90%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        justify-content: center;
+        margin-top: 30px;
+              
+        
+        .container-info-fs {
+          width: auto;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0;
+          margin: 0;
+          
+          .container-img-fs {
+            width: 8vw; 
+            height: 8vw;
+            
+            
+            display: flex;
+            justify-content: right;
+            align-items: flex-end;   
+
+            background-image: url(assets/bgi/chess-gray.png);
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-color: rgba(245, 234, 234, 0.185);
+
+            img {
+              width: 85%;
+              height: 85%;                                  
+            }
+          } 
+
+          .container-text-fs {
+            width: 60%;
+            height: 100%;
+            margin-left: 10px;
+
+            .fscard-name {
+              font-weight: bold;
+              display: flex;
+              align-items: center;
+              font-size: 1rem;
+              height: 30%;
+            }
+            .fscard-degree {
+              color: var(--color-secundary);
+              font-size: 0.8rem;
+              height: 15%;
+            }
+            .hr-speaker {
+              display: block;
+              margin: 5px 0 5px 0;
+              padding: 0;
+              height: 0;
+              border: 1px solid #272a3148;    
+              background-color: #2f273105;         
+            }
+            .fscard-text {              
+              font-size: 0.8rem;
+              height: 40%;
+              display: flex;
+              align-items: center;
+            }
+          } 
+        }       
+      }  
+      
+      .fs-buttonMore {
+        display: none;
+      }
+    }
+  }
+
+  footer {
+    .about-footer {
+      background-color: #272a31d7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2% 0 5% 0;
+      
+      h3 {
+        font-size: 1.2rem;
+        color: #e4e8f186;
+      }
+
+      hr {
+        background-color: #fff;
+        border: 1px solid #ec5242;
+        display: block;
+        width: 5%;
+        background-color: rgb(250, 0, 0);
+        margin: 2%;
+      }
+
+      .partner-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        
+        img {
+          width: 10vw;
+          height: 10vw;
+          border-radius: 50%;
+        }
+
+        img:hover {
+          transform: scale(1.2);
+        }
+      }
+
+
+    }
+
+    .bottom-partner {
+      display: flex;      
+      justify-content: center;
+      align-items: center;
+      
+      .bottom-logo {
+        width: 30%;
+        display: flex;
+        justify-content: right;
+
+        img {
+          width: 80%;
+        }
+      }
+
+      .rights-reserved {
+        width: 40%;
+        height: 50%;     
+        text-align: left;       
+      }
+    }
+  }
+
+  .modal-menuAbout {
+    display: none;
   }
 }
 
@@ -522,7 +907,7 @@ body {
         }
 
         .hitmark-2 {
-          background-image: url(assets/bgi/chess-black.png);
+          background-image: url(assets/bgi/chess_black.png);
           background-size: 125%;
           border-radius: 50%;
           position: absolute;
@@ -550,7 +935,7 @@ body {
         
 
         .hitmark-4 {
-          background-image: url(assets/bgi/chess-black.png);
+          background-image: url(assets/bgi/chess_black.png);
           background-size: 125%;
           border-radius: 50%;
           position: absolute;
