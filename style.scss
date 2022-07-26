@@ -529,11 +529,11 @@ body {
 
       .intro-paragraph1 {
         width: 60%;
-        background-color: rgba(189, 189, 189, 0.148);
+        background-color: rgba(247, 247, 247, 0.993);
         border: 4px solid white;
         padding: 15px;
         margin: 15px 0 15px 0;
-        font-size: .9rem;
+        font-size: .9rem;        
       }
 
       .intro-paragraph2 {
@@ -553,8 +553,7 @@ body {
           left: 0;
           top: 0;
           width: 100%;
-          height: 100%;
-          border: 1px solid #000;
+          height: 100%;         
           display: block;
           
 
@@ -575,14 +574,41 @@ body {
               opacity: 0.2;
             }
           }
-          .mainbg-3 {
-            
+          .mainbg-3 {            
+            background-image: url(assets/Icons/hitmark_onb.png);
+            background-size: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            right: 32%;
+            top: 45%;
+            z-index: -1;                       
           }
           .mainbg-4 {
-            display: none;
+            position: absolute;
+            right: 4%;
+            top: 60%;
+            width: 20px;
+            img {
+              width: 100%;
+              opacity: 0.2;
+            }
           }
           .mainbg-5 {
-            display: none;
+            position: absolute;
+            right: 20%;
+            top: 65%;
+            width: 50px;
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            img {
+              width: 100%;
+              opacity: 0.2;
+            }
           }
 
 
