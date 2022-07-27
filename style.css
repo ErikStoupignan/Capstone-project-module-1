@@ -700,18 +700,18 @@ body {
   main .features-speakerSection .fs-buttonMore {
     display: none;
   }
-  footer .about-footer {
+  .mobil .about-footer {
     background-color: rgba(39, 42, 49, 0.8431372549);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2% 0 5% 0;
+    padding: 2% 0 3% 0;
   }
-  footer .about-footer h3 {
+  .mobil .about-footer h3 {
     font-size: 1.2rem;
     color: rgba(228, 232, 241, 0.5254901961);
   }
-  footer .about-footer hr {
+  .mobil .about-footer hr {
     background-color: #fff;
     border: 1px solid #ec5242;
     display: block;
@@ -719,37 +719,38 @@ body {
     background-color: rgb(250, 0, 0);
     margin: 2%;
   }
-  footer .about-footer .partner-section {
+  .mobil .about-footer .partner-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 70%;
   }
-  footer .about-footer .partner-section img {
-    width: 10vw;
-    height: 10vw;
+  .mobil .about-footer .partner-section img {
+    width: 8vw;
+    height: 8vw;
     border-radius: 50%;
   }
-  footer .about-footer .partner-section img:hover {
+  .mobil .about-footer .partner-section img:hover {
     transform: scale(1.2);
+    border: 3px solid rgba(255, 68, 0, 0.548);
   }
-  footer .bottom-partner {
+  .mobil .bottom-partner {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  footer .bottom-partner .bottom-logo {
+  .mobil .bottom-partner .bottom-logo {
     width: 30%;
     display: flex;
     justify-content: right;
   }
-  footer .bottom-partner .bottom-logo img {
+  .mobil .bottom-partner .bottom-logo img {
     width: 80%;
   }
-  footer .bottom-partner .rights-reserved {
+  .mobil .bottom-partner .rights-reserved {
     width: 40%;
     height: 50%;
-    text-align: left;
+    text-align: center;
   }
   .modal-menuAbout {
     display: none;
@@ -982,7 +983,7 @@ body {
     margin: 0;
     font-size: 20px;
   }
-  .about-footer {
+  .new-partners {
     background-color: #3b3c3e;
     color: #d4d7e0;
     text-align: center;
@@ -992,20 +993,21 @@ body {
     align-items: center;
     padding: 5%;
   }
-  .about-footer h3 {
+  .new-partners h3 {
     margin: 10px 0 0 0;
+    font-size: 18px;
   }
-  .about-footer hr {
+  .new-partners hr {
     background-color: var(--color-secundary);
     color: var(--color-secundary);
     border: 1px solid var(--color-secundary);
     width: 8%;
-    margin: 8px 0 15px 0;
+    margin: 8px 0 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .about-footer .partner-section {
+  .new-partners .partner-section {
     width: 100%;
     height: 70%;
     padding: 0;
@@ -1013,44 +1015,51 @@ body {
     align-items: center;
     display: grid;
     grid-template-areas: "p1 p1 p2 p2 p3 p3" ". p4 p4 p5 p5 .";
-    grid-template-columns: 15% 15% auto auto 15% 15%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  .about-footer .partner-section .partner1 {
+  .new-partners .partner-section .partner1 {
     grid-area: p1;
     grid: 3fr;
   }
-  .about-footer .partner-section .partner1 img {
+  .new-partners .partner-section .partner1 img {
     width: 40%;
   }
-  .about-footer .partner-section .partner2 {
+  .new-partners .partner-section .partner2 {
     grid-area: p2;
     grid: 3fr;
   }
-  .about-footer .partner-section .partner2 img {
+  .new-partners .partner-section .partner2 img {
     width: 40%;
     border-radius: 50%;
   }
-  .about-footer .partner-section .partner3 {
+  .new-partners .partner-section .partner3 {
     grid-area: p3;
     grid: 3fr;
   }
-  .about-footer .partner-section .partner3 img {
+  .new-partners .partner-section .partner3 img {
     width: 45%;
     border-radius: 50%;
   }
-  .about-footer .partner-section .partner4 {
+  .new-partners .partner-section .partner4 {
     grid-area: p4;
   }
-  .about-footer .partner-section .partner4 img {
+  .new-partners .partner-section .partner4 img {
     width: 34%;
     border-radius: 50%;
   }
-  .about-footer .partner-section .partner5 {
+  .new-partners .partner-section .partner5 {
     grid-area: p5;
   }
-  .about-footer .partner-section .partner5 img {
+  .new-partners .partner-section .partner5 img {
     width: 40%;
+  }
+  .new-partners .partner-section img {
+    border-radius: 50%;
+  }
+  .new-partners .partner-section img:hover {
+    transform: scale(1.2);
+    border: 5px solid rgba(250, 250, 250, 0.192);
   }
   .new-white {
     display: none;
@@ -1138,9 +1147,11 @@ body {
 }
 /* Desktop version - About page ------------------------------------------------------ */
 @media screen and (min-width: 769px) {
+  .about-main .hidden {
+    visibility: hidden;
+  }
   .about-main .intro-containerAbout {
     width: 100%;
-    height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1278,7 +1289,6 @@ body {
     width: 80%;
     grid-gap: 20px;
     justify-content: center;
-    position: relative;
   }
   .about-main .intro-containerAbout .intro-part3 .events-about .event1 {
     background: rgba(187, 173, 173, 0.548);
@@ -1332,9 +1342,6 @@ body {
     padding: 0;
     margin: 0;
     font-size: 20px;
-  }
-  .footer-desktopAbout {
-    margin-top: 900px;
   }
   .footer-desktopAbout .new-partners {
     display: none;

@@ -809,13 +809,13 @@ body {
     }
   }
 
-  footer { 
-    .about-footer {
+  .mobil { 
+      .about-footer {
       background-color: #272a31d7;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 2% 0 5% 0;
+      padding: 2% 0 3% 0;
       
       h3 {
         font-size: 1.2rem;
@@ -838,13 +838,14 @@ body {
         width: 70%;
         
         img {
-          width: 10vw;
-          height: 10vw;
+          width: 8vw;
+          height: 8vw;
           border-radius: 50%;
         }
 
         img:hover {
           transform: scale(1.2);
+          border: 3px solid rgba(255, 68, 0, 0.548);
         }
       }
 
@@ -855,7 +856,7 @@ body {
       display: flex;      
       justify-content: center;
       align-items: center;
-      
+            
       .bottom-logo {
         width: 30%;
         display: flex;
@@ -869,7 +870,7 @@ body {
       .rights-reserved {
         width: 40%;
         height: 50%;     
-        text-align: left;       
+        text-align: center;       
       }
     }
   }
@@ -878,6 +879,10 @@ body {
     display: none;
   }
 }
+
+
+
+
 
 
 // About page
@@ -1144,7 +1149,7 @@ body {
     }
   }
 
-  .about-footer {
+  .new-partners {
     background-color: #3b3c3e;
     color: #d4d7e0;
     text-align: center;
@@ -1156,6 +1161,7 @@ body {
 
     h3 {
       margin: 10px 0 0 0;
+      font-size: 18px;
     }
     
     hr {
@@ -1163,7 +1169,7 @@ body {
       color: var(--color-secundary);       
       border: 1px solid var(--color-secundary);  
       width: 8%;
-      margin: 8px 0 15px 0;          
+      margin: 8px 0 20px 0;          
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1180,7 +1186,7 @@ body {
       "p1 p1 p2 p2 p3 p3"
       ". p4 p4 p5 p5 .";
       
-      grid-template-columns: 15% 15% auto auto 15% 15%;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
 
       .partner1 {
@@ -1218,6 +1224,15 @@ body {
         img {
           width: 40%;
         }
+      }
+
+      img {
+        border-radius: 50%;
+      }
+
+      img:hover {
+        transform: scale(1.2);
+        border: 5px solid rgba(250, 250, 250, 0.192);
       }
     }
   }
@@ -1323,12 +1338,13 @@ body {
 /* Desktop version - About page ------------------------------------------------------ */
 @media screen and (min-width: 769px) {
 
-
   .about-main {
+    .hidden {
+      visibility: hidden;
+    }
     
     .intro-containerAbout {
       width: 100%;
-      height: 85vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1483,8 +1499,7 @@ body {
           grid-template-columns: 40% 40%;
           width: 80%;
           grid-gap: 20px;
-          justify-content: center;      
-          position: relative; 
+          justify-content: center;     
           .event1{
             background: rgba(187, 173, 173, 0.548);
             display: flex;
@@ -1547,14 +1562,9 @@ body {
     }
   }
 
-
   .footer-desktopAbout {
-    margin-top: 900px;
-
-      .new-partners {
+    .new-partners {
       display: none;
-    
-
     }
 
     .new-black {
@@ -1584,12 +1594,6 @@ body {
     }
   }
  
-
-    
-   
-
-
-
   .modal-about {
     display: none; 
   }
