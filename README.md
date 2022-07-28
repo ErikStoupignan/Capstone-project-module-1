@@ -62,7 +62,7 @@ link to the guidelines: https://www.behance.net/gallery/29845175/CC-Global-Summi
 
 ## Loom Video 
 
-- Link: 
+- Link: https://www.loom.com/share/7cd80b34c5da43409079365c6229a932
 
 ## 📝 License
 
