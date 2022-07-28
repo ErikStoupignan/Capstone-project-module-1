@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # My Capstone Project!
@@ -67,3 +68,7 @@ link to the guidelines: https://www.behance.net/gallery/29845175/CC-Global-Summi
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+=======
+# Capstone-project-module-1
+Capstone project. Module 1 final project
+>>>>>>> b49c4d17e7509c981c8e9d59db5bc99436774bec
