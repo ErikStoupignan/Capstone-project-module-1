@@ -42,6 +42,11 @@ This website can be viewed at: https://erikstoupignan.github.io/My_Portfolio/
 - Twitter: [@Erik_Stoupignan](https://twitter.com/Erik_Stoupignan)
 - LinkedIn: [Erik Stoupignan Sánchez Beltrán](https://www.linkedin.com/in/erik-stoupignan-s%C3%A1nchez-beltr%C3%A1n-393180238/)
 
+## Acknowledgments
+
+- To Cindy Shin, since the whole website is based on her template.
+link: https://www.behance.net/gallery/29845175/CC-Global-Summit-2015
+
 ## Loom Video 
 
 - Link: 
