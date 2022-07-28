@@ -7,11 +7,13 @@ const list = document.querySelector('#list-menu');
 // Open de hamburguer menu
 hambIcon.addEventListener('click', () => {
   modal.style.display = 'block';
+  hambIcon.style.display = 'none';
 });
 
 // Close de hamburguer menu
 xIcon.addEventListener('click', () => {
   modal.style.display = 'none';
+  hambIcon.style.display = 'block';
 });
 
 // If click in an option from de memu, close the menu

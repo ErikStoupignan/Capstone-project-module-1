@@ -66,12 +66,5 @@ link to the guidelines: https://www.behance.net/gallery/29845175/CC-Global-Summi
 
 ## 📝 License
 
-<<<<<<< HEAD
 This project is [MIT](./MIT.md) licensed.
-=======
-# Capstone-project-module-1
-Capstone project. Module 1 final project
->>>>>>> b49c4d17e7509c981c8e9d59db5bc99436774bec
-=======
-This project is [MIT](./MIT.md) licensed.
->>>>>>> 74e98023e7be1f0c8fd8c3aff3ac916ed56b16ad
+

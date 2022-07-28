@@ -1,3 +1,5 @@
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable csstree/validator */
 * {
   margin: 0;
   padding: 0;
@@ -75,12 +77,10 @@ body {
     background-image: url(assets/Erik\ Capstone.jpg);
     background-repeat: no-repeat;
     background-size: 150%;
-    /* stylelint-disable */
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -o-background-clip: text;
     background-clip: text;
-    /* stylelint-enable */
     background-position: 50% 55%;
   }
 
@@ -406,13 +406,11 @@ body {
   }
 
   /* Modal Menu */
-
-  /* stylelint-disable */
   .modal-menu {
     display: none;
     position: fixed;
     -webkit-backdrop-filter: blur(55px);
-            backdrop-filter: blur(55px);
+    backdrop-filter: blur(55px);
     background-color: rgba(135, 55, 9, 0.537);
     height: 100vh;
     width: 100%;
@@ -476,8 +474,6 @@ body {
   .modal-hamburguer a:hover {
     color: #ec5242;
   }
-
-  /* stylelint-enable */
 }
 
 /* Desktop version - Main page------------------------------------------------------ */
@@ -599,10 +595,8 @@ body {
     background-image: url(assets/Erik\ Capstone.jpg);
     background-repeat: no-repeat;
     background-size: 150%;
-    /* stylelint-disable */
     -webkit-background-clip: text;
-            background-clip: text;
-    /* stylelint-enable */
+    background-clip: text;
     background-position: 50% 55%;
   }
 
@@ -907,7 +901,6 @@ body {
     background-color: rgba(245, 234, 234, 0.185);
   }
 
-  /* stylelint-disable-next-line */
   main .features-speakerSection .contaier-speakers .container-info-fs .container-img-fs img {
     width: 88%;
     height: 88%;
@@ -963,7 +956,6 @@ body {
     padding: 2% 0 3% 0;
   }
 
-  /* stylelint-disable-next-line */
   .mobil .about-footer h3 {
     font-size: 25px;
     font-weight: lighter;
@@ -985,14 +977,12 @@ body {
     width: 70%;
   }
 
-  /* stylelint-disable-next-line */
   .mobil .about-footer .partner-section img {
     width: 8vw;
     height: 8vw;
     border-radius: 50%;
   }
 
-  /* stylelint-disable-next-line */
   .mobil .about-footer .partner-section img:hover {
     transform: scale(1.2);
     border: 3px solid rgba(255, 68, 0, 0.548);
@@ -1010,7 +1000,6 @@ body {
     justify-content: right;
   }
 
-  /* stylelint-disable-next-line */
   .mobil .bottom-partner .bottom-logo img {
     width: 80%;
   }
@@ -1040,10 +1029,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 60px 5% 10% 5%;
-
-    /* stylelint-disable */
-
-    /* stylelint-enable */
   }
 
   .intro-containerAbout .intro-part1 h2 {
@@ -1065,8 +1050,6 @@ body {
     background-repeat: no-repeat;
     background-size: 150%;
     -webkit-background-clip: text;
-
-    /* stylelint-disable-next-line */
     background-clip: text;
     background-position: 50% 55%;
   }
@@ -1297,8 +1280,6 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 5%;
-
-    /* stylelint-disable */
   }
 
   .new-partners h3 {
@@ -1366,7 +1347,7 @@ body {
     width: 34%;
     border-radius: 50%;
   }
-  
+
   .new-partners .partner-section .partner5 {
     grid-area: p5;
   }
@@ -1384,7 +1365,6 @@ body {
     border: 5px solid rgba(250, 250, 250, 0.192);
   }
 
-  /* stylelint-enable */
   .new-white {
     display: none;
   }
@@ -1402,7 +1382,6 @@ body {
     width: 40%;
   }
 
-  /* stylelint-disable-next-line */
   .new-black .bottom-logo img {
     width: 80%;
   }
@@ -1520,12 +1499,9 @@ body {
     color: #ec5242;
   }
 
-  /* stylelint-disable */
   .modal-hamburguer a:hover {
     color: #ec5242;
   }
-
-  /* stylelint-enable */
 }
 
 /* Desktop version - About page ------------------------------------------------------ */
@@ -1612,6 +1588,7 @@ body {
     margin-top: 10px;
     font-weight: 900;
     letter-spacing: 1px;
+    z-index: 10;
   }
 
   .about-main .intro-containerAbout .intro-part1 .intro-paragraph3 span i {
@@ -1847,17 +1824,12 @@ body {
     justify-content: center;
     width: 100%;
     height: 30%;
-
-    /* stylelint-disable */
-
-    /* stylelint-enable */
   }
 
   .footer-desktopAbout .new-white .bottom-logo {
     width: 20%;
   }
 
-  /* stylelint-disable-next-line */
   .footer-desktopAbout .new-white .bottom-logo img {
     width: 30%;
   }
@@ -1873,8 +1845,4 @@ body {
   .modal-about {
     display: none;
   }
-
-  /* stylelint-disable-next-line */
 }
-
-/*# sourceMappingURL=style.css.map */
