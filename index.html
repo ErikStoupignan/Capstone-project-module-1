@@ -22,13 +22,11 @@
 </head>
 <body>
   <header>
-
     <nav class="nav-bar">
-
       <section class="nav-bar-section1">
-        <div><i class="fab fa-facebook-f"></i></div>
-        <div><i class="fab fa-twitter"></i></div>
-        <div>Spanish</div>
+        <div><i onclick='openWindow("erik-fb")' class="fab fa-facebook-f"></i></div>
+        <div><i onclick='openWindow("lore-ig")' class="fab fa-instagram"></i></div>
+        <div>English</div>
         <div>My Page</div>
         <div>Logout</div>
       </section>
@@ -64,6 +62,11 @@
         <div class="mainbg-3"></div>
         <div class="mainbg-4"><img src="assets/Icons/hitmark_gray.png" alt=""></div>
         <div class="mainbg-5"><img src="assets/bgi/chess_black5.png" alt=""></div>
+        <div class="mainbg-6"><img src="assets/Icons/no_yen.png" alt=""></div>
+        <div class="mainbg-7"><img src="assets/Icons/zero.png" alt=""></div>
+        <div class="mainbg-8"><img src="assets/Icons/zero.png" alt=""></div>
+        <div class="mainbg-9"><img src="assets/Icons/reverse.png" alt=""></div>
+        
       </div>
       <h2>"¡Hola! Digital Universe"</h2>
       <h1>INTERCULTURAL EXCHANGE MEXICO-CANADA 2023</h1>
@@ -75,7 +78,7 @@
     <section class="main-program-section">
       <div class="container-main-program">
         <h3>Main Program</h3>
-        <hr>
+        <hr class="mainprogram-hr">
 
         <div class="cards">
           <!-- Card1 -->
@@ -113,7 +116,8 @@
         </div>
 
         <!-- Main Program button -->
-        <div class="card-button">Join IE Mexico-Canada 2023</div>
+        <div class="card-button display-mobil">Join IE Mexico-Canada 2023</div>
+        <div class="card-button display-desktop">SEE THE WHOLE PROGRAM</div>
 
 
       </div>
@@ -122,62 +126,14 @@
      
     </section>
 
-
     <section class="features-speakerSection">
       <h3 class="fs-title">Featured Speakers</h3>
       <hr class="speakerfeatures-hr">
+      <div id="speakers" class="contaier-speakers"></div> 
 
-      <div class="contaier-speakers">
-        <!-- Speaker 1 -->
-        <div class="container-info-fs">
-          <div class="container-img-fs">
-            <img src="assets/speaker-Lorena.jpg" alt="">
-          </div>
-
-          <div class="container-text-fs">
-            <h4 class="fscard-name">Lorena Hermosa</h4>
-            <div class="fscard-degree"><i>Ingeniero en Sistemas computaciones de la NASA </i></div>
-            <hr class="hr-speaker">
-            <div class="fscard-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nam cum omnis in? Ad, quibusdam.</div>
-          </div>
-        </div>
-        
-        <!-- Speaker 2 -->
-        <div class="container-info-fs">
-          <div class="container-img-fs">
-            <img src="assets/speaker-wuilu.jpg" alt="">
-          </div>
-
-          <div class="container-text-fs">
-            <h4 class="fscard-name">Wuilu Speaker</h4>
-            <div class="fscard-degree"><i>Guerrera profesional de MMA </i></div>
-            <hr class="hr-speaker">
-            <div class="fscard-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nam cum omnis in? Ad, quibusdam.</div>
-          </div>
-        </div>
-
-        <!-- Speaker 3 -->
-        <div class="container-info-fs">
-          <div class="container-img-fs">
-            <img src="assets/speaker-wuilu.jpg" alt="">
-          </div>
-
-          <div class="container-text-fs">
-            <h4 class="fscard-name">Wuilu Speaker</h4>
-            <div class="fscard-degree"><i>Guerrera profesional de MMA </i></div>
-            <hr class="hr-speaker">
-            <div class="fscard-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nam cum omnis in? Ad, quibusdam.</div>
-          </div>
-        </div>
-
-        
-      </div>
-
-
-
-      
             
-      <div class="fs-buttonMore"> <span>MORE</span><i class="fas fa-angle-down"></i> </div>
+      <div id="open-Btn" onclick="showSpeakers('open')" class="fs-buttonMore"> <span>MORE</span><i class="fas fa-angle-down"></i> </div>
+      <div id="close-Btn" onclick="showSpeakers('close')" class="fs-buttonMore close-Btn"> <span>LESS</span><i class="fas fa-angle-up"></i> </div>
     </section>
 
   </main>
@@ -187,11 +143,11 @@
       <h3>Partner</h3>
       <hr>
       <div class="partner-section">
-        <div class="partner1"><img src="assets/guilulogo_1.png" alt=""></div>
-        <div class="partner2"><img src="assets/rocaAmatista_logo.jpeg" alt=""></div>
-        <div class="partner3"><img src="assets/beltmar_logo.jpeg" alt=""></div>
-        <div class="partner4"><img src="assets/MictlanMex-logo.jpeg" alt=""></div>
-        <div class="partner5"><img src="assets/Logo_bcb.png" alt=""></div>
+        <a href="https://www.instagram.com/guilu_spanishroom/" class="partner1"><img src="assets/guilulogo_1.png" alt=""></a>
+        <a href="https://www.instagram.com/belmarnovedades/" class="partner2"><img src="assets/beltmar_logo.jpeg" alt=""></a>
+        <a href="https://www.instagram.com/roca.amatista/" class="partner3"><img src="assets/rocaAmatista_logo.jpeg" alt=""></a>
+        <a href="https://www.instagram.com/mictlanmex.ver/" class="partner4"><img src="assets/MictlanMex-logo.jpeg" alt=""></a>
+        <a href="https://www.instagram.com/bellezaconbren/" class="partner5"><img src="assets/Logo_bcb.png" alt=""></a>
       </div>
     </section>
 
@@ -211,8 +167,13 @@
         <li><a href="#">Join</a></li>
         <li><a href="#">Sponsor</a></li>
         <li><a href="#">News</a></li>
-        <li><a href="#">CC Campaign</a></li>
+        <li><a href="#">IG Campaign</a></li>
     </ul>
+    <div class="Modal-background">
+      <div class="modal-bg1"></div>
+      <div class="modal-bg2"></div>
+      <div class="modal-bg3"></div>
+    </div>
   </div>
         
 
