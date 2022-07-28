@@ -2,15 +2,28 @@
 
 # My Capstone Project!
 
-MAIN PAGE
+## MAIN PAGE
 
- Desktop version:
- Mobil versión: 
+**Desktop version:**
+-
+ ![image](https://user-images.githubusercontent.com/106561762/181419088-95c28bb4-6ddf-4a7e-b0ba-625034467c2b.png)
 
-ABOUT PAGE
+**Mobil versión:** 
+-
+ ![image](https://user-images.githubusercontent.com/106561762/181419163-faa1bafc-abba-440c-8435-af71943d1307.png)
 
- Desktop version:
- Mobil versión: 
+
+## ABOUT PAGE
+
+**Desktop version:**
+-
+ ![image](https://user-images.githubusercontent.com/106561762/181419245-52e6193a-0f8b-41a7-9e6d-0f17765045a2.png)
+
+ 
+ **Mobil versión:** 
+ -
+ ![image](https://user-images.githubusercontent.com/106561762/181419207-1f07c164-d908-4218-8bb4-b3fa68040208.png)
+
 
 ## Built With
 
@@ -32,7 +45,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Deployment
 
-This website can be viewed at: https://erikstoupignan.github.io/My_Portfolio/
+This website can be viewed at: https://erikstoupignan.github.io/Capstone-project-module-1/index.html
 
 ## Authors
 
@@ -44,8 +57,8 @@ This website can be viewed at: https://erikstoupignan.github.io/My_Portfolio/
 
 ## Acknowledgments
 
-- To Cindy Shin, since the whole website is based on her template.
-link: https://www.behance.net/gallery/29845175/CC-Global-Summit-2015
+- To Cindy Shin, since the whole website is based on her template. <br>
+link to the guidelines: https://www.behance.net/gallery/29845175/CC-Global-Summit-2015
 
 ## Loom Video 
 
