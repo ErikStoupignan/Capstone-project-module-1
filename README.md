@@ -1,13 +1,22 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# My Portfolio!
+# My Capstone Project!
 
- In my portfolio, you can find evidence of my work as a web developer.
+MAIN PAGE
+
+ Desktop version:
+ Mobil versión: 
+
+ABOUT PAGE
+
+ Desktop version:
+ Mobil versión: 
 
 ## Built With
 
 - HTML
 - CSS
+- JS
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
@@ -21,13 +30,9 @@ To get a local copy up and running follow these simple example steps.
 - If everything was ok, your terminal will send to you information about your download. 
 - Finally, you could go to Visual Studio Code and open the folder with your new repository and start to work.
 
-## Desktop version screenshot
-
-![image](https://user-images.githubusercontent.com/106561762/178395159-23b149ba-5ae7-4f2d-b3f4-7fae0c491769.png)
-
 ## Deployment
-This website can be viewed at: https://erikstoupignan.github.io/My_Portfolio/
 
+This website can be viewed at: https://erikstoupignan.github.io/My_Portfolio/
 
 ## Authors
 
@@ -37,14 +42,9 @@ This website can be viewed at: https://erikstoupignan.github.io/My_Portfolio/
 - Twitter: [@Erik_Stoupignan](https://twitter.com/Erik_Stoupignan)
 - LinkedIn: [Erik Stoupignan Sánchez Beltrán](https://www.linkedin.com/in/erik-stoupignan-s%C3%A1nchez-beltr%C3%A1n-393180238/)
 
-## Collaborators
+## Loom Video 
 
-👤 **Tahseen Zahra**
-
-- GitHub: [@tahseenzahra](https://github.com/tahseenzahra)
-- Twitter: [@tahseen1zahra](https://twitter.com/tahseen1zahra)
-- LinkedIn: [@tahseenzahra](https://www.linkedin.com/in/tahseenzahra/)
-
+- Link: 
 
 ## 📝 License
 
