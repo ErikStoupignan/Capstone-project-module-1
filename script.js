@@ -35,7 +35,7 @@ const master = [
     name: 'Nancy S. Ferrer',
     job: 'Community Manager and Content Creator @guilu_spanishroom and @teacher_lore',
     description: 'Writer of the best selling book: “Stop IG from Becoming your Frenemy”, is here to show you how to do more with less, you don’t need to go broke to make every post look top.',
-    imgs: ['assets/speaker-nancy.jpg'],
+    imgs: ['assets/speaker-nancyFix.jpeg'],
   },
   {
     id: 'speaker3',
